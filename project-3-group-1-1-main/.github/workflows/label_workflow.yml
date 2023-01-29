@@ -1,0 +1,11 @@
+name: Label
+on: [pull_request]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Labeling
+        uses: andymckay/labeler@master
+        with:
+          add-labels: "Approved"     
